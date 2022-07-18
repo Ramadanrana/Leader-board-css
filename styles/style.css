@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:ital,wght@0,500;1,400&family=Roboto+Slab:wght@900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 138px;
+
+}
+
+.T {
+    color: #562EFF;
+
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.pn {
+    margin-left: 16px;
+    font-size: 18px;
+
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+}
+
+.top-player {
+    margin-bottom: 30px;
+}
+
+.blog {
+    display: flex;
+}
+
+.all-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+}
+
+.blog-header {
+    margin-left: 20px;
+}
+
+.blog img {
+    width: 177px;
+    height: 117px;
+}
+
+.author-name {
+    text-decoration: none;
+}
+
+.all-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.fill {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.course-clock {
+    color: red;
+    background-color: lightpink;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.instructor {
+    color: #ED6B4F;
+    font-size: 14px;
+}
+
+/* Media queries */
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .all-blog,
+    .all-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+
+    .all-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
